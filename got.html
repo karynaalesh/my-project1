@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game of Thrones</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: aliceblue;
+        }
+
+        h2 {
+            color: aliceblue;
+            text-align: center;
+            border: 1px solid aliceblue;
+            line-height: 50px;
+            font-size: 20px;
+            border-radius: 3px;
+            padding: 10px;
+            border-right: -100px;
+            font-style: italic;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 50%;
+            border-radius: 5px;
+        }
+
+        body {
+            background: linear-gradient(#40434E, black);
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            background-color: aliceblue;
+            color: #40434E;
+            font-size: 23px;
+            border-radius: 5px;
+            padding: 15px 20px;
+            border: none;
+            box-shadow: 5px 5px 10px #40434E;
+            transition: all 200ms ease-in-out;
+            margin-bottom: 23px;
+        }
+
+        button:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+            color: aliceblue;
+            margin-right: 100px;
+            margin-left: 100px;
+            line-height: 1.5;
+        }
+
+        .learn-more {
+            display: block;
+            margin-top: 20px;
+            color: #87BFFF;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .footer {
+            font-size: 15px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<h1>
+    Game of Thrones
+</h1>
+<h2>
+    TV Series | 2011-2019 | adventure, drama, fantasy
+</h2>
+
+<body>
+    <div class="container">
+
+        <img
+            src="https://cdn.seat42f.com/wp-content/uploads/2013/03/12212743/Cersei-Lannister-Game-Of-Thrones-Season-3-Poster.jpg" />
+        <p>
+            In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As
+            conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile,
+            the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.
+        </p>
+        <a href="https://www.imdb.com/title/tt0944947/" target="_blank" class="learn-more">
+            Learn more on IMDb
+        </a>
+        &nbsp;
+
+        <button class="buy-button">
+            💿 Buy DVD & Blu-ray
+        </button>
+        &nbsp;
+
+        <p class="footer">
+            This page was built by Karyna Aleshchenko
+        </p>
+
+    </div>
+    <script>
+        function buy() {
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email adress?");
+            alert("Thank you for your information " + name + "! We'll contact you by email!");
+        }
+        let buyButton = document.querySelector(".buy-button");
+        buyButton.addEventListener("click", buy);
+    </script>
+</body>
+
+</html>
